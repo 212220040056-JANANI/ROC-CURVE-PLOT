@@ -17,10 +17,12 @@ Uses of ROC Curve :
 2.On the other hand, if our classifier is predicting whether someone has a terminal illness, we might be ok with a higher number of false positives (incorrectly diagnosing the illness), just to make sure that we don’t miss any true positives (people who actually have the illness).
 
 ## Algorithm
-1.
-2.
-3.
-4.
+1. Import the required libraries.
+2. Create the training dataset.
+3. Create the neural network model with one hidden layer.
+4. Train the model with training data.
+5. Now test the model with testing data.
+
 
 ## Program:
 ```
@@ -29,10 +31,36 @@ Program to plot Receiver Operating Characteristic [ROC] Curve.
 Developed by   :
 RegisterNumber :  
 */
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn import metrics
+import matplotlib.pyplot as plt
+url="https://raw.githubusercontent.com/Statology/Python-Guides/main/default.csv"
+data=pd.read_csv(url)
+x=data[['student','balance','income']]
+y=data['default']
+X_train,X_test,Y_train,Y_test=train_test_split(x,y,test_size=0.3,random_state=0)
+log=LogisticRegression()
+log.fit(X_train,Y_train)
+y_pred_proba=log.predict_proba(X_test)[::,1]
+fpr,lpr,_=metrics.roc_curve(Y_test,y_pred_proba)
+plt.plot(fpr,lpr)
+plt.ylabel("True Positive Rate")
+plt.ylabel("False Positive Rate")
+plt.show()
+y_pred_proba=log.predict_proba(X_test)[::,1]
+fpr,lpr,_=metrics.roc_curve(Y_test,y_pred_proba)
+auc=metrics.roc_auc_score(Y_test,y_pred_proba)
+plt.plot(fpr,lpr,label="AUC=")
+plt.ylabel("True Positive Rate")
+plt.ylabel("False Positive Rate")
+plt.show()
 ```
 
 ## Output:
-![ANN by back propagation algorithm](XXX.png)
+![image](https://user-images.githubusercontent.com/86832944/169463144-41edfc85-d30f-414e-aa8c-1c0574c70d3f.png)
 
 
 ## Result:
