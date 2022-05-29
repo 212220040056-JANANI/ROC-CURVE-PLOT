@@ -23,6 +23,8 @@ Uses of ROC Curve :
 4. Train the model with training data.
 5. Now test the model with testing data.
 
+<br>
+<br>
 
 ## PROGRAM:
 ```
@@ -58,6 +60,22 @@ plt.ylabel("True Positive Rate")
 plt.ylabel("False Positive Rate")
 plt.show()
 ```
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## OUTPUT:
 ![image](https://user-images.githubusercontent.com/86832944/169463144-41edfc85-d30f-414e-aa8c-1c0574c70d3f.png)
