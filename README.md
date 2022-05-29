@@ -1,13 +1,13 @@
 ### EX NO : 07
-### DATE  :
+### DATE  : 09/05/2022
 # <p align="center"> ROC CURVE PLOT </p>
-## Aim:
+## AIM:
    To write python code to plot ROC curve used in ANN.
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner /Google Colab
 
-## Related Theory Concept:
+## RELATED THEORY CONCEPTS:
 The receiver operating characteristic (ROC) curve is frequently used for evaluating the performance of binary classification algorithms. It provides a graphical representation of a classifier’s performance, rather than a single value like most other metrics. First, let’s establish that in binary classification, there are four possible outcomes for a test prediction: true positive, false positive, true negative, and false negative. The ROC curve is produced by calculating and plotting the true positive rate against the false positive rate for a single classifier at a variety of thresholds.
 
 Uses of ROC Curve :
@@ -24,7 +24,7 @@ Uses of ROC Curve :
 5. Now test the model with testing data.
 
 
-## Program:
+## PROGRAM:
 ```
 /*
 Program to plot Receiver Operating Characteristic [ROC] Curve.
@@ -59,9 +59,9 @@ plt.ylabel("False Positive Rate")
 plt.show()
 ```
 
-## Output:
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/86832944/169463144-41edfc85-d30f-414e-aa8c-1c0574c70d3f.png)
 
 
-## Result:
+## RESULT:
 Thus the python program successully plotted Receiver Operating Characteristic [ROC] Curve.
