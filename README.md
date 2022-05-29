@@ -30,8 +30,8 @@ Uses of ROC Curve :
 ```
 /*
 Program to plot Receiver Operating Characteristic [ROC] Curve.
-Developed by   :
-RegisterNumber :  
+Developed by   : Janani D
+RegisterNumber : 212220040056
 */
 import pandas as pd
 import numpy as np
